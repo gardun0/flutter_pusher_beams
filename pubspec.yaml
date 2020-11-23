@@ -1,8 +1,8 @@
 name: pusher_beams
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
+description: Unofficial Pusher Beams Flutter client library.
+version: 0.2.0
+author: Jorge Garduño
+homepage: https://github.com/notsofunctional/flutter_pusher_beams
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
