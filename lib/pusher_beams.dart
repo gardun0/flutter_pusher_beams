@@ -1,8 +1,6 @@
-
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import './models/authorization_options.dart';
 
 class PusherBeams {
   static const MethodChannel _channel =
@@ -10,14 +8,6 @@ class PusherBeams {
 
   static Future<void> start(String instanceId) async {
     await _channel.invokeMethod('start', instanceId);
-  }
-
-  static Future<void> registerForRemoteNotifications({ AuthorizationOptions options }) async {
-    throw UnimplementedError('This method is still unimplemented');
-  }
-
-  static Future<void> registerDeviceToken() async {
-    throw UnimplementedError('This method is still unimplemented');
   }
 
   static Future<void> addDeviceInterest(String interest) async {
@@ -40,10 +30,6 @@ class PusherBeams {
 
   static Future<void> clearDeviceInterests() async {
     await _channel.invokeMethod('clearDeviceInterests');
-  }
-
-  static Future<List<String>> handleNotification(Map userInfo) async {
-    throw UnimplementedError('This method is still unimplemented');
   }
 
   static Future<bool> setUserId(String userId, tokenProvider) {

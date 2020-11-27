@@ -7,14 +7,8 @@ import 'package:pusher_beams/pusher_beams.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await PusherBeams.start('fe8d1a3b-49f8-4375-a278-a49e6bb7f020');
-  await PusherBeams.addDeviceInterest('hello');
-  await PusherBeams.addDeviceInterest('debug-hello');
-
-  Timer.run(() async {
-    final ints = await PusherBeams.getDeviceInterests();
-    print(ints.length);
-  });
+  // Initialize PusherBeams as soon as possible (here is RECOMMENDED)
+  await PusherBeams.start('YOUT INSTANCE ID GOES HERE');
 
   runApp(MyApp());
 }
@@ -25,32 +19,29 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     super.initState();
-    initPlatformState();
+    initPluginTest();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
+  Future<void> initPluginTest() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      // platformVersion = await PusherBeams.platformVersion;
+      // As in Pusher Beams Get Started
+      await PusherBeams.addDeviceInterest('hello');
+
+      // For debug purposes on Debug Console
+      await PusherBeams.addDeviceInterest('debug-hello');
+
+      final interests = await PusherBeams.getDeviceInterests();
+
+      // Result example [hello, debug-hello, ...]
+      print(interests);
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      print("PlatformException D:");
     }
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _platformVersion = platformVersion;
-    });
   }
 
   @override
@@ -58,10 +49,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Pusher Beams Plugin Example'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Text("You can test your notifications now"),
         ),
       ),
     );

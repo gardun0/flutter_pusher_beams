@@ -1,7 +1,6 @@
 name: pusher_beams
-description: Unofficial Pusher Beams Flutter client library.
-version: 0.2.0
-author: Jorge Garduño
+description: Unofficial Pusher Beams Flutter client library supported for iOS and Android.
+version: 0.5.3
 homepage: https://github.com/notsofunctional/flutter_pusher_beams
 
 environment:
@@ -33,8 +32,8 @@ flutter:
       android:
         package: dev.jrge.pusher_beams
         pluginClass: PusherBeamsPlugin
-#      ios:
-#        pluginClass: PusherBeamsPlugin
+      ios:
+        pluginClass: PusherBeamsPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
