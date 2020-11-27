@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class PusherBeams {
-  static const MethodChannel _channel =
-      const MethodChannel('pusher_beams');
+  static const MethodChannel _channel = const MethodChannel('pusher_beams');
 
   static Future<void> start(String instanceId) async {
     await _channel.invokeMethod('start', instanceId);
@@ -19,7 +18,8 @@ class PusherBeams {
   }
 
   static Future<List<String>> getDeviceInterests() async {
-    final List<String> interests = await _channel.invokeListMethod('getDeviceInterests');
+    final List<String> interests =
+        await _channel.invokeListMethod('getDeviceInterests');
 
     return Future.value(interests);
   }
@@ -39,6 +39,7 @@ class PusherBeams {
   static Future<void> clearAllState() async {
     await _channel.invokeMethod('clearAllState');
   }
+
   static Future<void> stop() async {
     await _channel.invokeMethod('stop');
   }
