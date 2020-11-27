@@ -19,7 +19,7 @@ Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from 
 Once the above have been set up, you must include this plugin on your `pubspec.yaml`:
 ```yaml
     dependencies:
-        firebase_messaging: ^0.2.0
+        firebase_messaging: "^0.5.3+1"
 ``` 
 
 Get the `instanceId` from your Pusher Beams panel and call `.start()` as soon as possible on your app:
