@@ -1,6 +1,6 @@
 name: pusher_beams
 description: Unofficial Pusher Beams Flutter client library supported for iOS and Android.
-version: 0.2.0-dev
+version: 0.5.3
 homepage: https://github.com/notsofunctional/flutter_pusher_beams
 
 environment:

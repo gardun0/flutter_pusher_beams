@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'pusher_beams'
-  s.version          = '0.0.1'
+  s.version          = '0.5.3'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.

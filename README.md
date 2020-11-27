@@ -8,7 +8,6 @@ _Note: the plugin API is develop with the same parameters and functions names as
 
 [iOS Documentation](https://pusher.com/docs/beams/reference/ios) | [Android Documentation](https://pusher.com/docs/beams/reference/android)
 
-
 ## Installation Guide
 - Create a pusher
 
