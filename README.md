@@ -18,8 +18,8 @@ Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from 
 
 Once the above have been set up, you must include this plugin on your `pubspec.yaml`:
 ```yaml
-    dependencies:
-        firebase_messaging: "^0.5.3+2"
+dependencies:
+  pusher_beams: "^0.5.3+2"
 ``` 
 
 Get the `instanceId` from your Pusher Beams panel and call `.start()` as soon as possible on your app:
@@ -27,14 +27,14 @@ Get the `instanceId` from your Pusher Beams panel and call `.start()` as soon as
 import 'package:pusher_beams/pusher_beams.dart'; // Import the plugin
 
 // Stuff
-  void main () async {
-    // Your app setup
+void main () async {
+  // Your app setup
     
-    // We start PusherBeams before the app
-    await PusherBeams.start('YOUR INSTANCE ID');
+  // We start PusherBeams before the app
+  await PusherBeams.start('YOUR INSTANCE ID');
 
-    runApp(SomeApp());
-  }
+  runApp(SomeApp());
+}
 ```
 
 Once PusherBeams were started you can now start to add, remove or get the interests you need as follows:
