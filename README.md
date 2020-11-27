@@ -4,12 +4,12 @@
 
 Unofficial _Pusher Beams_ [Flutter](https://flutter.dev/) client library supported for iOS and Android.
 
-_Note: the plugin API is develop with the same parameters and functions names as the native SDK_
+_Note: the plugin API have been designed with the same parameters and functions names as the native SDKs_
 
 [iOS Documentation](https://pusher.com/docs/beams/reference/ios) | [Android Documentation](https://pusher.com/docs/beams/reference/android)
 
 ## Installation Guide
-- Create a pusher
+- You need a Pusher Beams instance to get an `instanceId`, you can get one [from here](https://pusher.com/beams)
 
 Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from the following packages on **your Flutter app** as Pusher Beams itself requires [FCM](https://firebase.google.com/docs/cloud-messaging) to work:
 - [firebase_messaging](https://pub.dev/packages/firebase_messaging) (This is important, follow and read everything)
