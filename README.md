@@ -19,7 +19,7 @@ Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from 
 Once the above have been set up, you must include this plugin on your `pubspec.yaml`:
 ```yaml
 dependencies:
-  pusher_beams: "^0.5.3+2"
+  pusher_beams: "^0.5.3+3"
 ``` 
 
 Get the `instanceId` from your Pusher Beams panel and call `.start()` as soon as possible on your app:
