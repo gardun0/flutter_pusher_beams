@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'pusher_beams'
-  s.version          = '0.5.3+2'
+  s.version          = '0.5.3+3'
   s.summary          = 'Unofficial Pusher Beams Flutter client library supported for iOS and Android.'
   s.description      = <<-DESC
 A new flutter plugin project.
