@@ -56,6 +56,7 @@ await PusherBeams.getDeviceInterests();
 ### Todo
 - Send from flutter serializable `AuhtorizationOptions` for custom [UNAuthorizationOptions](https://developer.apple.com/documentation/usernotifications/unauthorizationoptions).
 - `setUserId` implementation to add the authentication part
+- Flutter Web support
 
 ---
 
