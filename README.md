@@ -4,12 +4,12 @@
 
 Unofficial _Pusher Beams_ [Flutter](https://flutter.dev/) client library supported for iOS and Android.
 
-_Note: the plugin API is develop with the same parameters and functions names as the native SDK_
+_Note: the plugin API have been designed with the same parameters and functions names as the native SDKs_
 
 [iOS Documentation](https://pusher.com/docs/beams/reference/ios) | [Android Documentation](https://pusher.com/docs/beams/reference/android)
 
 ## Installation Guide
-- Create a pusher
+- You need a Pusher Beams instance to get an `instanceId`, you can get one [from here](https://pusher.com/beams)
 
 Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from the following packages on **your Flutter app** as Pusher Beams itself requires [FCM](https://firebase.google.com/docs/cloud-messaging) to work:
 - [firebase_messaging](https://pub.dev/packages/firebase_messaging) (This is important, follow and read everything)
@@ -19,7 +19,7 @@ Follow the [FlutterFore](https://firebase.flutter.dev/) installation guide from 
 Once the above have been set up, you must include this plugin on your `pubspec.yaml`:
 ```yaml
     dependencies:
-        firebase_messaging: "^0.5.3+1"
+        firebase_messaging: "^0.5.3+2"
 ``` 
 
 Get the `instanceId` from your Pusher Beams panel and call `.start()` as soon as possible on your app:
@@ -56,6 +56,7 @@ await PusherBeams.getDeviceInterests();
 ### Todo
 - Send from flutter serializable `AuhtorizationOptions` for custom [UNAuthorizationOptions](https://developer.apple.com/documentation/usernotifications/unauthorizationoptions).
 - `setUserId` implementation to add the authentication part
+- Flutter Web support
 
 ---
 
