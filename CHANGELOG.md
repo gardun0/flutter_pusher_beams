@@ -1,5 +1,9 @@
 
-## 0.2.0-dev
+## 0.5.3+1
+* Security issue with google-services from example
+* README word fix on Notes section
+
+## 0.5.3
 
 * Fix minimum iOS version on PusherNotifications library
 * iOS implementation
