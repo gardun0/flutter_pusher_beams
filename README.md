@@ -49,7 +49,7 @@ await PusherBeams.getDeviceInterests();
 
 ## Notes
 
-- I decided not to write the function documentation as they were implemented the same as they native libraries, you can [read it here](https://pusher.com/docs/beams/reference/ios).
+- I decided not to write the function documentation as they were implemented the same as their native libraries, you can [read it here](https://pusher.com/docs/beams/reference/ios).
 - Every function on this Plugin is a Dart _Future_.
 - Remember this library have been implemented as a Singleton (the native libraries follows this pattern).
 
