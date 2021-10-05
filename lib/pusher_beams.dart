@@ -18,7 +18,7 @@ class PusherBeams {
   }
 
   static Future<List<String>> getDeviceInterests() async {
-    final List<String> interests =
+    final List<String>? interests =
         await _channel.invokeListMethod('getDeviceInterests');
 
     return Future.value(interests);
